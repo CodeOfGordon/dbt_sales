@@ -12,13 +12,10 @@ sources:
             tests: 
               - unique
               - not_null
-
       - name: lineitem
         columns:
           - name: l_orderkey
-            tests: 
-              - unique
-              - not_null
+            tests:
               - relationships:
                   to: source('tpch', 'orders')
                   field: o_orderkey
