@@ -1,6 +1,8 @@
-In this project, I create a data pipeline by sourcing data from Snowflake, using dbt to standardize schemas & actually build the pipeline, and orchestrating the DAG deployment in Airflow.
+In this project, I create a data pipeline by sourcing data from Snowflake, using dbt to standardize schemas & actually build the pipeline, and orchestrating the DAG deployment in Airflow with Astronomer Cosmos.
 
 Throughout this data pipeline, we will be using the `tpch_sf1` table from the `snowflake_sample_data` database in Snowflake. This database generally provides many tables that are considered a decision support benchmark for broad industry-wide relevance, which provides a good dataset for us.
+
+<img width="1521" height="721" alt="dbt_sales drawio" src="https://github.com/user-attachments/assets/3afeebae-454d-470a-8c4c-dd24d44dda03" />
 
 
 # 1. Set up Snowflake and create necessary roles and permissions
